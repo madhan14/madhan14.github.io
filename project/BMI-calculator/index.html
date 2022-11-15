@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+    <html lang="en">
+
+    <head>
+        <meta charset="utf-8" />
+        <title>Simple BMI Calculator</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!-- App favicon -->
+
+        <!-- third party css -->
+        <link href="assets/css/vendor/jquery-jvectormap-1.2.2.css" rel="stylesheet" type="text/css" />
+        <!-- third party css end -->
+
+        <!-- App css -->
+        <link href="assets/css/icons.min.css" rel="stylesheet" type="text/css" />
+        <link href="assets/css/app.min.css" rel="stylesheet" type="text/css" id="app-style"/>
+
+        <style>
+            .error{
+                display: none;
+                width: 100%;
+                margin-top: 0.25rem;
+                font-size: .75rem;
+                color: #fa5c7c;
+            }
+
+            .navbar-custom{
+                text-align: center;
+            }
+        </style>
+
+    </head>
+
+    <body class="loading hide-menu" data-layout="full" data-layout-color="light" data-leftbar-theme="dark" data-layout-mode="fluid" data-rightbar-onstart="true">
+        <!-- Begin page -->
+        <div class="wrapper">
+
+            <!-- ============================================================== -->
+            <!-- Start Page Content here -->
+            <!-- ============================================================== -->
+
+            <div class="content-page">
+                <div class="content">
+                    <!-- Topbar Start -->
+                    <div class="navbar-custom">
+                        <!-- <div class="row"> -->
+                            <h1>Simple BMI Calculator</h1>
+                        <!-- </div> -->
+                    </div>
+                   
+                    <!-- end Topbar -->
+                    
+                    <!-- Start Content-->
+                    <div class="container-fluid">
+
+                        <!-- start page title -->
+                        <div class="row">
+                            <div class="col-12">
+                                <div class="page-title-box">
+                                    <h4 class="page-title">Simple BMI Calculator</h4>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- end page title -->
+                        <div class="row">
+                            <div class="col">
+                                <form>
+                                    <div class="mb-3">
+                                        <label for="example-input-normal" class="form-label">Height</label>
+                                        <input type="number" id="height" onkeyup="height_validate()" name="example-input-normal" class="form-control" placeholder="height in meters">
+                                        <div class="error height">Please enter the height.</div>
+                                    </div>
+                                    
+                                    <div class="mb-3">
+                                        <label for="example-input-normal" class="form-label">Weight</label>
+                                        <input type="number" id="weight" onkeyup="weight_validate()" name="example-input-normal" class="form-control" placeholder="weight in kilograms">
+                                        <div class="error weight">Please enter the weight.</div>
+                                    </div>
+                                    <input type="button" id="submit" class="btn btn-primary" value="Calculate BMI" />
+                                </form>
+                            </div>
+                            <div class="col">
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col">
+                                <div class="mb-3">
+                                    <h3>Your Body Mass Index(BMI) is <span class="text-success bmi">0</span></h3>
+                                </div>
+                            </div>
+                            <div class="col"></div>
+                        </div>
+                    </div>
+                    <!-- container -->
+
+                </div>
+                <!-- content -->
+
+            </div>
+
+            <!-- ============================================================== -->
+            <!-- End Page content -->
+            <!-- ============================================================== -->
+
+
+        </div>
+        <!-- END wrapper -->
+
+        <div class="rightbar-overlay"></div>
+        <!-- /End-bar -->
+
+        <!-- bundle -->
+        <script src="assets/js/vendor.min.js"></script>
+        <script src="assets/js/app.min.js"></script>
+
+        <!-- third party js -->
+        <script src="assets/js/vendor/apexcharts.min.js"></script>
+        <script src="assets/js/vendor/jquery-jvectormap-1.2.2.min.js"></script>
+        <script src="assets/js/custom.js"></script>
+        <!-- <script src="assets/js/vendor/jquery-jvectormap-world-mill-en.js"></script> -->
+        <!-- third party js ends -->
+
+        <!-- demo app -->
+        <!-- <script src="assets/js/pages/demo.dashboard.js"></script> -->
+        <!-- end demo js-->
+    </body>
+</html>
