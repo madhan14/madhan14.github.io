@@ -1072,3 +1072,19 @@ section {
     padding-right: 20px 15px;
   }
 }
+
+
+.project{
+  padding-bottom: 130px;
+}
+
+.project .info{
+  padding: 30px;
+  background: #fff;
+  width: 100%;
+  box-shadow: 0 0 24px 0 rgb(0 0 0 / 12%);
+}
+
+.info{
+  color: inherit;
+}
